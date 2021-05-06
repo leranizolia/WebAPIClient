@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Reflection;
 using System.Text.Json;
 using System.Threading.Tasks;
 
@@ -18,13 +19,21 @@ namespace WebAPIClient
             foreach (var repo in repositories)
             //TODO попробовать заменить это на цикл по списку с properties
             {
-                Console.WriteLine(repo.Name);
-                Console.WriteLine(repo.Description);
-                Console.WriteLine(repo.GitHubUrl);
-                Console.WriteLine(repo.Homepage);
-                Console.WriteLine(repo.Watchers);
-                Console.WriteLine(repo.LastPush);
+                Type type = repo.GetType();
+                PropertyInfo[] properties = type.GetProperties();
+
+                foreach (PropertyInfo property in properties)
+                {
+                    Console.WriteLine(property.GetValue(repo, null));
+                }
                 Console.WriteLine();
+                //Console.WriteLine(repo.Name);
+                //Console.WriteLine(repo.Description);
+                //Console.WriteLine(repo.GitHubUrl);
+                //Console.WriteLine(repo.Homepage);
+                //Console.WriteLine(repo.Watchers);
+                //Console.WriteLine(repo.LastPush);
+                //Console.WriteLine();
             }
         }
 
