@@ -19,14 +19,27 @@ namespace WebAPIClient
             foreach (var repo in repositories)
             //TODO попробовать заменить это на цикл по списку с properties
             {
-                Type type = repo.GetType();
-                PropertyInfo[] properties = type.GetProperties();
-
-                foreach (PropertyInfo property in properties)
-                {
-                    Console.WriteLine(property.GetValue(repo, null));
-                }
+                var name = repo.Name;
+                var description = repo.Description;
+                var url = repo.GitHubUrl;
+                var homepage = repo.Homepage;
+                var watchers = repo.Watchers;
+                var push = repo.LastPush;
+                Console.WriteLine($"Name of repository: {name}" +
+                    $"\nDescription of repository: {description}" +
+                    $"\nUrl of repository: {url}" +
+                    $"\nHomepage of repository: {homepage}" +
+                    $"\nWatchers of repository: {watchers}" +
+                    $"\nLastPush of repository: {push}");
                 Console.WriteLine();
+                //Type type = repo.GetType();
+                //PropertyInfo[] properties = type.GetProperties();
+
+                //foreach (PropertyInfo property in properties)
+                //{
+                //    Console.WriteLine(property.GetValue(repo, null));
+                //}
+                //Console.WriteLine();
                 //Console.WriteLine(repo.Name);
                 //Console.WriteLine(repo.Description);
                 //Console.WriteLine(repo.GitHubUrl);

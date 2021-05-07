@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{5FEDEF10-185D-49CB-8062-AEE4A88D1A6E}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../BankAccount/HelloWorld/BankAccount.cs">
+    <Files>
+      <File FileName="../BankAccount/HelloWorld/Program.cs" Line="1" Column="1" />
+      <File FileName="../BankAccount/HelloWorld/LineOfCreditAccount.cs" />
+      <File FileName="../BankAccount/HelloWorld/GiftCardAccount.cs" />
+      <File FileName="../BankAccount/HelloWorld/BankAccount.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.WebAPIClient PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

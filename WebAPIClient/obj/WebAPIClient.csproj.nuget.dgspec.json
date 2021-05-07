@@ -14,7 +14,7 @@
         "outputPath": "/Users/a19082303/Desktop/WebAPIClient/WebAPIClient/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/a19082303/.nuget/NuGet/NuGet.Config"
+          "/Users/a19082303/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
