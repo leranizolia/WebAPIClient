@@ -1,11 +1,11 @@
 # WebAPIClient
 
-Этот мини-проект сделан по официальному туториалу из документации по C# (ссылка: https://docs.microsoft.com/en-gb/dotnet/csharp/tutorials/console-webapiclient).
+This mini-project was made according to the official tutorial from the C # documentation (link: https://docs.microsoft.com/en-gb/dotnet/csharp/tutorials/console-webapiclient).
 
-В нём создается приложение, которое отправляет HTTP-запросы к службе REST на GitHub. Приложение считывает информацию в формате JSON и преобразует JSON в объекты C# (десериализация).
+It creates an application that sends HTTP requests to a REST service on GitHub. The application reads the information in JSON format and converts the JSON to C # objects (deserialization).
 
-В ходе реализации проекта было изучено, как:
+## During the implementation of the project, it was studied how:
 
-1) Отправлять HTTP-запросы;
-2) Десериализовать ответы JSON;
-3) Настраивать десериализацию с атрибутами.
+1) Send HTTP requests;
+2) Deserialize JSON responses;
+3) Configure deserialization with attributes.
